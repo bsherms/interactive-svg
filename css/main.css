@@ -1,6 +1,6 @@
 #right-eye,
 #left-eye {
-  animation: looking
+  animation: looking 3s ease-in infinite;
 }
 
 #right-ear,
@@ -8,13 +8,18 @@
   transition: all .5s ease-out;
 }
 
+#bear:hover #right-ear,
+#bear:hover #left-ear {
+  transform: translateY(-15px);
+}
+
 @keyframes looking {
 
   0% {
-
+    transform: translateX(10px);
   }
 
   100% {
-
+    transform: translateX(-10px);
   }
 }
