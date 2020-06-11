@@ -1,6 +1,11 @@
 #right-eye,
 #left-eye {
-  animation: looking 3s ease-in infinite;
+  animation: looking 3s infinite forwards;
+}
+
+#right-eye,
+#left-eye {
+  animation: looking 3s infinite reverse;
 }
 
 #right-ear,
